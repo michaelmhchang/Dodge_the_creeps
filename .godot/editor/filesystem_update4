@@ -4,3 +4,5 @@ res://Main.tscn
 res://Main.cs
 res://Player.cs
 res://Mob.cs
+res://HUD.cs
+res://HUD.tscn

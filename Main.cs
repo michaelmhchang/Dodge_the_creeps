@@ -12,7 +12,6 @@ public partial class Main : Node
     // Called when the node enters the scene tree for the first time.
     public override void _Ready()
     {
-        NewGame();
     }
 
     // Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -22,6 +21,8 @@ public partial class Main : Node
 
     public void GameOver()
     {
+        GetNode<HUD>("HUD").ShowGameOver();
+
         GetNode<Timer>("MobTimer").Stop();
         GetNode<Timer>("ScoreTimer").Stop();
     }
@@ -29,6 +30,9 @@ public partial class Main : Node
     // New game setup
     public void NewGame()
     {
+        // CallGroup calls function for every instance in the group "mobs"
+        GetTree().CallGroup("mobs", Node.MethodName.QueueFree);
+
         _score = 0;
 
         var player = GetNode<Player>("Player");
@@ -36,11 +40,17 @@ public partial class Main : Node
         player.Start(startPosition.Position);
 
         GetNode<Timer>("StartTimer").Start();
+
+        var hud = GetNode<HUD>("HUD");
+        hud.UpdateScore(_score);
+        hud.ShowMessage("Get Ready!");
     }
 
     private void OnScoreTimerTimeout ()
     {
         _score++;
+
+        GetNode<HUD>("HUD").UpdateScore(_score);
     }
 
     private void OnStartTimerTimeout()

@@ -1,7 +1,10 @@
+Timer
+Button
+Label
+CanvasLayer
 Marker2D
 PathFollow2D
 Path2D
-Timer
 Node
 VisibleOnScreenNotifier2D
 CollisionShape2D

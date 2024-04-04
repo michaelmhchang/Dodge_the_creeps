@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://oemqlal8hfpq"]
 
 [ext_resource type="Texture2D" uid="uid://dnnw88u5h2mln" path="res://art/playerGrey_up1.png" id="1_0py46"]
-[ext_resource type="Script" path="res://player.cs" id="1_i5kaf"]
+[ext_resource type="Script" path="res://Player.cs" id="1_i5kaf"]
 [ext_resource type="Texture2D" uid="uid://njhv4nreboij" path="res://art/playerGrey_up2.png" id="2_7meyg"]
 [ext_resource type="Texture2D" uid="uid://b8fvby2r2gioa" path="res://art/playerGrey_walk1.png" id="3_q7dic"]
 [ext_resource type="Texture2D" uid="uid://dn13k765i0tmx" path="res://art/playerGrey_walk2.png" id="4_bdyci"]
@@ -47,3 +47,5 @@ animation = &"walk"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(2.38604, 2.26208)
 shape = SubResource("CapsuleShape2D_k1t2i")
+
+[connection signal="body_entered" from="." to="." method="OnBodyEntered"]

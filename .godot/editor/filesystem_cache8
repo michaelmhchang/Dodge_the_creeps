@@ -1,8 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1712200966
+::res://::1712209955
 icon.svg::CompressedTexture2D::2469793453369858256::1711735789::1711735792::1::::<><>::
-player.cs::CSharpScript::-1::1712200772::0::1::::<>Area2D<>::
-player.tscn::PackedScene::991659076865390154::1712199118::0::1::::<><>::uid://dnnw88u5h2mln::::res://art/playerGrey_up1.png<>res://player.cs<>uid://njhv4nreboij::::res://art/playerGrey_up2.png<>uid://b8fvby2r2gioa::::res://art/playerGrey_walk1.png<>uid://dn13k765i0tmx::::res://art/playerGrey_walk2.png
+Main.cs::CSharpScript::-1::1712209933::0::1::::<>Node<>::
+Main.tscn::PackedScene::6192363716292957186::1712209917::0::1::::<><>::res://Main.cs<>uid://d2kll0uh2aimp::::res://Mob.tscn<>uid://oemqlal8hfpq::::res://Player.tscn
+Mob.cs::CSharpScript::-1::1712207313::0::1::::<>RigidBody2D<>::
+Mob.tscn::PackedScene::9075693481834140887::1712209917::0::1::::<><>::uid://ddn2pr8s4vxja::::res://art/enemyFlyingAlt_1.png<>res://Mob.cs<>uid://bhhpm3ovyrw3t::::res://art/enemyFlyingAlt_2.png<>uid://dpwi1x7gnux6b::::res://art/enemySwimming_1.png<>uid://bbmh5ugbxk1gj::::res://art/enemySwimming_2.png<>uid://dh5gqw10pckn::::res://art/enemyWalking_1.png<>uid://fcu122lthbns::::res://art/enemyWalking_2.png
+Player.cs::CSharpScript::-1::1712207484::0::1::::<>Area2D<>::
+Player.tscn::PackedScene::991659076865390154::1712209917::0::1::::<><>::uid://dnnw88u5h2mln::::res://art/playerGrey_up1.png<>res://Player.cs<>uid://njhv4nreboij::::res://art/playerGrey_up2.png<>uid://b8fvby2r2gioa::::res://art/playerGrey_walk1.png<>uid://dn13k765i0tmx::::res://art/playerGrey_walk2.png
 README.md::TextFile::-1::1711768803::0::1::::<><>::
 ::res://art/::1712200937
 enemyFlyingAlt_1.png::CompressedTexture2D::7398332583242387206::1698074263::1711735792::1::::<><>::

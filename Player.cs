@@ -1,7 +1,7 @@
 using Godot;
 using System;
 
-public partial class player : Area2D
+public partial class Player : Area2D
 {
 	[Signal]
 	public delegate void HitEventHandler();
@@ -16,7 +16,7 @@ public partial class player : Area2D
 	{
 		ScreenSize = GetViewportRect().Size;
 
-		Hide();
+	  	Hide();
 	}
 
 	// Called every frame. 'delta' is the elapsed time since the previous frame.

@@ -21,6 +21,9 @@ public partial class Main : Node
 
     public void GameOver()
     {
+        GetNode<AudioStreamPlayer>("Music").Stop();
+        GetNode<AudioStreamPlayer>("DeathSound").Play();
+
         GetNode<HUD>("HUD").ShowGameOver();
 
         GetNode<Timer>("MobTimer").Stop();
@@ -32,6 +35,8 @@ public partial class Main : Node
     {
         // CallGroup calls function for every instance in the group "mobs"
         GetTree().CallGroup("mobs", Node.MethodName.QueueFree);
+
+        GetNode<AudioStreamPlayer>("Music").Play();
 
         _score = 0;
 

@@ -1,0 +1,14 @@
+{
+  "version": 2,
+  "dgSpecHash": "975FOgASxEAh6SYZ+EtJef/odnZEaJ/WEQ+byW5d/xKqk44Nk3LwsiiptgILQrzYYmG3UbmFKyOoi5Pk9JNqzg==",
+  "success": true,
+  "projectFilePath": "/home/m/Documents/godot/Dodge_the_creeps2/DodgeTheCreeps2D.csproj",
+  "expectedPackageFiles": [
+    "/home/m/.nuget/packages/godot.sourcegenerators/4.2.1/godot.sourcegenerators.4.2.1.nupkg.sha512",
+    "/home/m/.nuget/packages/godotsharp/4.2.1/godotsharp.4.2.1.nupkg.sha512",
+    "/home/m/.nuget/packages/godotsharpeditor/4.2.1/godotsharpeditor.4.2.1.nupkg.sha512",
+    "/home/m/.nuget/packages/microsoft.netcore.app.ref/6.0.28/microsoft.netcore.app.ref.6.0.28.nupkg.sha512",
+    "/home/m/.nuget/packages/microsoft.aspnetcore.app.ref/6.0.28/microsoft.aspnetcore.app.ref.6.0.28.nupkg.sha512"
+  ],
+  "logs": []
+}
